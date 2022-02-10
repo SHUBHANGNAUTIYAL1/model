@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+ body
+{
+margin : 0;
+padding : 0;
+font-family: sans-serif;
+background-image: url('https://cdn.wallpapersafari.com/84/39/rjcu7q.jpg');
+}
+
+.container .box
+{
+   position : relative;
+   width: calc(150px);
+   height: calc(150px);
+   background: rgb(0, 255, 21);
+   float : left;
+   margin: 15px;
+   box-sizing : border-box;
+   overflow:hidden;
+   border-radius:10px;
+   font-size:15px ;
+   
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+.box1{
+  max-width: 400px;
+  width: 100%;
+
+}
+.box1 .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 50px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+#check:checked ~ .search-box{
+  max-width: 380px;
+}
+.search-box input{
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ border-radius: 25px;
+ background: #fff;
+ outline: none;
+ border: none;
+ padding-left: 20px;
+ font-size: 18px;
+}
+.search-box .icon{
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 50px;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/633/234/original/search-icon-symbol-sign-vector.jpg');
+  background: #FFF;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #FF676D;
+  font-size: 20px;
+  border-radius: 25px;
+}
+#check:checked ~ .search-box .icon{
+  background: #FF676D;
+  color: #FFF;
+ 
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+}
+#check{
+  display: none;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="box1">
+        <input type="checkbox" id="check">
+        <div class="search-box">
+          <input type="text" placeholder="Enter company symbol..." id="textbox">
+          <label for="check" class="icon">
+            <i class="fas fa-search"></i>
+          </label>
+        </div>
+      </div>
+    <br>
+    <br>
+    <div align="center" class ="box2"  >
+    <h1 align="center"> <hr><u>STOCKS</u><hr></h1>
+</div>
+    <br>
+    <br>
+    <br>
+    
+    
+    <div class="container">
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name1}} </u><p>
+              <br>
+            <p>&nbsp;OPEN : {{a1}}</p>
+          <p>&nbsp;CLOSE : {{b1}}</p>  
+          <p>&nbsp;MA_{{e1}} : {{c1}}</p>
+          <p>&nbsp;DIFF : {{d1}}({{k1}}%)</p>
+
+
+        </div>
+   
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name2}}</u> <p>
+              <br>
+            <p>&nbsp;OPEN : {{a2}}</p>
+          <p>&nbsp;CLOSE : {{b2}}</p>  
+          <p>&nbsp;MA_{{e2}} : {{c2}}</p>
+          <p>&nbsp;DIFF : {{d2}}({{k2}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name3}}</u> <p>
+              <br>
+            <p>&nbsp;OPEN : {{a3}}</p>
+          <p>&nbsp;CLOSE : {{b3}}</p>  
+          <p>&nbsp;MA_{{e3}} : {{c3}}</p>
+          <p>&nbsp;DIFF : {{d3}}({{k3}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name4}}</u> <p>
+              <br>
+            <p>&nbsp;OPEN : {{a4}}</p>
+          <p>&nbsp;CLOSE : {{b4}}</p>  
+          <p>&nbsp;MA_{{e1}} : {{c4}}</p>
+          <p>&nbsp;DIFF : {{d4}}({{k4}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name5}}</u><p>
+              <br>
+            <p>&nbsp;OPEN : {{a5}}</p>
+          <p>&nbsp;CLOSE : {{b5}}</p>  
+          <p>&nbsp;MA_{{e1}} : {{c5}}</p>
+          <p>&nbsp;DIFF : {{d5}}({{k5}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name6}}</u> <p>
+              <br>
+            <p>&nbsp;OPEN : {{a6}}</p>
+          <p>&nbsp;CLOSE : {{b6}}</p>  
+          <p>&nbsp;MA_{{e1}} : {{c6}}</p>
+          <p>&nbsp;DIFF : {{d6}}({{k6}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name7}}</u><p>
+              <br>
+            <p>&nbsp;OPEN : {{a7}}</p>
+          <p>&nbsp;CLOSE : {{b7}}</p>  
+          <p>&nbsp;MA_{{e1}} : {{c7}}</p>
+          <p>&nbsp;DIFF : {{d7}}({{k7}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name8}}</u> <p>
+              <br>
+            <p>&nbsp;OPEN : {{a8}}</p>
+          <p>&nbsp;CLOSE : {{b8}}</p>  
+          <p>&nbsp;MA_{{e1}} : {{c8}}</p>
+          <p>&nbsp;DIFF : {{d8}}({{k8}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name9}}</u> <p>
+              <br>
+            <p>&nbsp;OPEN : {{a9}}</p>
+          <p>&nbsp;CLOSE : {{b9}}</p>  
+          <p>&nbsp;MA_{{e2}} : {{c9}}</p>
+          <p>&nbsp;DIFF : {{d9}}({{k9}}%)</p>
+
+
+        </div>
+
+        <div class="box">
+          <br>
+            <p align="center"><u>{{name10}}</u> <p>
+              <br>
+            <p>&nbsp;OPEN : {{a10}}</p>
+          <p>&nbsp;CLOSE : {{b10}}</p>  
+          <p>&nbsp;MA_{{e2}} : {{c10}}</p>
+          <p>&nbsp;DIFF : {{d10}}({{k10}}%)</p>
+
+
+        </div>
+
+    </div>
+   
+   
+   
+    <script type="text/javascript">
+       
+        
+        
+        var textBox = document.getElementById("textbox");
+        
+        // This event is fired when button is clicked
+        textbox.addEventListener("keydown", function (event) {
+
+            if (event.keyCode == 13) {
+                var str = textBox.value;
+                var s="https://finance.yahoo.com/quote/"+str+"?p="+str+"&.tsrc=fin-srch";
+                window.open(s);
+            }
+            })
+    </script>
+    
+</body>
+</html>
